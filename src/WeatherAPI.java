@@ -12,6 +12,7 @@ public class WeatherAPI {
     // Instance Variables
     private static final String API_KEY = "fe0e168e72580138a8cb819cec103ff3";
     private static final String BASE_URL = "http://api.openweathermap.org/data/2.5/weather";
+    public static final char[] getTemp = null;
 
     public String getAllWeatherInfo(String location) {
         String urlString = BASE_URL + "?q=" + location.replaceAll(" ", "%20") + "&appid=" + API_KEY + "&units=imperial";
@@ -49,7 +50,8 @@ public class WeatherAPI {
     public String parseWeatherData(String blockOfText) {
 
         //TODO
-        return String getCityName, getTemp, getHumidity, getWindSpeed; 
+        return "Tempterature: " + getTemp(blockOfText) + "°F\n" +  "Humidity: " + getHumidity(blockOfText) + "%\n" + "Wind Speed: " + getWindSpeed(blockOfText) + "mph";
+
 
     }
 
