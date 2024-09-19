@@ -49,6 +49,7 @@ public class WeatherAPI {
     public String parseWeatherData(String blockOfText) {
 
         //TODO
+        return String getCityName, getTemp, getHumidity, getWindSpeed; 
 
     }
 
